@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teacher Panel</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<h2>Generate Attendance QR</h2>
+<input type="text" id="classid" placeholder="Enter Class ID">
+<button onclick="generateQR()">Generate QR</button>
+<div id="qrcode"></div>
+
+<script>
+function generateQR(){
+let classid = document.getElementById("classid").value;
+document.getElementById("qrcode").innerHTML = "";
+new QRCode(document.getElementById("qrcode"),{
+text: classid,
+width:200,
+height:200
+});
+}
+</script>
+</body>
+</html>

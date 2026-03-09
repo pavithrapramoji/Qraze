@@ -1,0 +1,30 @@
+
+body{
+font-family: Arial;
+text-align:center;
+background:#f4f4f4;
+}
+
+h1{
+color:#222;
+}
+
+.container{
+margin-top:100px;
+}
+
+.btn{
+padding:15px 40px;
+font-size:18px;
+margin:20px;
+background:black;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:gold;
+color:black;
+}
